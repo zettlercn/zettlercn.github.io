@@ -2,7 +2,7 @@
 <html>
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="utf-8">
-  <title>努力的方法 | 欧阳鹏翔</title>
+  <title>zettlercn oa table record | 欧阳鹏翔</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link rel="shortcut icon" href="/favicon.ico">
   <link rel="stylesheet" href="/css/app.css">
@@ -30,15 +30,45 @@
   <main class="post">
   <article>
   <h1 class="article-title">
-    <a href="/2018/11/03/努力的方法/">努力的方法</a>
+    <a href="/2018/11/05/zettlercn-oa-table-record/">zettlercn oa table record</a>
   </h1>
 
   <section class="article-meta">
-    <p class="article-date">十一月 03 2018</p>
+    <p class="article-date">十一月 05 2018</p>
   </section>
 
   <section class="article-entry">
-    <h6 id="水平方向上的努力是没有意义的，做垂直方向上的努力才能引发量变到质变。"><a href="#水平方向上的努力是没有意义的，做垂直方向上的努力才能引发量变到质变。" class="headerlink" title="水平方向上的努力是没有意义的，做垂直方向上的努力才能引发量变到质变。"></a>水平方向上的努力是没有意义的，做垂直方向上的努力才能引发量变到质变。</h6><p><img src="/uploads/ypgf.jpg" alt="勇攀高峰" title="&#39;勇攀高峰&#39;"></p>
+    <ul>
+<li><p>客户<br><code>select  MA001,MA002,MA003,COMPANY,* from COPMA WHERE COMPANY IS NULL</code></p>
+</li>
+<li><p>品号<br>(<code>)
+select top (10) * from(SELECT  row_number() over(order by MB001) as rownumber,* 
+FROM INVMB WHERE 1=1  AND MB001 LIKE @number  AND MB003 LIKE @specification  )b where rownumber&gt;10
+(</code>)</p>
+</li>
+<li><p>固定资产<br><code>select * from 固定资产 order by 购买日期 desc,总价 desc</code></p>
+</li>
+</ul>
+<ul>
+<li><p>工作流实例<br><code>select * from FlowInstance order by CreateDate desc</code></p>
+</li>
+<li><p>用户<br><code>select * from users  where id=46</code></p>
+</li>
+<li><p>菜单</p>
+<blockquote>
+<p>工程变更通知单-NEW 605<br>工作流模板管理(新) 607<br>录入工程变更通知单-ze-new 608</p>
+</blockquote>
+<p>  <code>select * from MenuInfo where 1=1 and NAME like &#39;%录入工程变更通知单%&#39;</code></p>
+</li>
+<li><p>角色列表<br><code>select * from RoleInfo</code></p>
+</li>
+<li><p>角色关连菜单表<br><code>select * from RoleMenu where 1=1 and mid=420</code></p>
+</li>
+<li><p>用户角色表 1:N<br><code>select * from meun_userrole</code></p>
+</li>
+<li><p>DZ 角色关连菜单表<br><code>select * from DZ_RoleMenu where 1=1 and MID=420;</code></p>
+</li>
+</ul>
 
   </section>
 </article>
@@ -54,7 +84,8 @@
 
   <section class="share-btns">
     <!-- <p> share it if you like it~ </p> -->
-    <a class="twitter-share-button" data-size="large" data-via="DrakeLeung" href="https://twitter.com/intent/tweet?text= id=" 水平方向上的努力是没有意义的，"="">
+    <a class="twitter-share-button" data-size="large" data-via="DrakeLeung" href="https://twitter.com/intent/tweet?text=>
+<li><p>客户<br><code">
   Tweet
 </a>
 
@@ -93,7 +124,7 @@
 <script>
   var disqus_shortname = 'drakeleung';
   
-  var disqus_url = 'https://oypx1234.github.io/2018/11/03/努力的方法/';
+  var disqus_url = 'https://oypx1234.github.io/2018/11/05/zettlercn-oa-table-record/';
   
   (function(){
     var dsq = document.createElement('script');
