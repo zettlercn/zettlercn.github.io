@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="zettler,work,">
 
 
 
@@ -79,17 +79,18 @@
 
 
 
-<meta name="description" content="高楼像山坡，我像只麻雀，谁说生活一定要这样沉默，我要大声的和着，虽然我是只麻雀.">
-<meta name="keywords" content="ZE,ZR,ZM">
-<meta property="og:type" content="website">
-<meta property="og:title" content="ZettlerBlog">
-<meta property="og:url" content="https://zettlercn.github.io/index.html">
+<meta name="description" content="2018.10.8  完成流程模板管理页的开发（新增，编辑，预览，删除） 编辑和预览模板的时候 FlowNodeInfo.aspx 页面不显示之前的选择审批人（已解决）  2018.10.9  设计Ecn列表页原型 梳理工作流业务逻辑 测试工作流模板的创建 增加ECN表与工作流实例表的管理 alter table ecn add flowInstanceId 修改工作流发起逻辑，增加与Ecn数据的">
+<meta name="keywords" content="zettler,work">
+<meta property="og:type" content="article">
+<meta property="og:title" content="2018-10 work record">
+<meta property="og:url" content="https://zettlercn.github.io/2018/11/05/2018-10-work-record/index.html">
 <meta property="og:site_name" content="ZettlerBlog">
-<meta property="og:description" content="高楼像山坡，我像只麻雀，谁说生活一定要这样沉默，我要大声的和着，虽然我是只麻雀.">
+<meta property="og:description" content="2018.10.8  完成流程模板管理页的开发（新增，编辑，预览，删除） 编辑和预览模板的时候 FlowNodeInfo.aspx 页面不显示之前的选择审批人（已解决）  2018.10.9  设计Ecn列表页原型 梳理工作流业务逻辑 测试工作流模板的创建 增加ECN表与工作流实例表的管理 alter table ecn add flowInstanceId 修改工作流发起逻辑，增加与Ecn数据的">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-11-05T08:53:41.007Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="ZettlerBlog">
-<meta name="twitter:description" content="高楼像山坡，我像只麻雀，谁说生活一定要这样沉默，我要大声的和着，虽然我是只麻雀.">
+<meta name="twitter:title" content="2018-10 work record">
+<meta name="twitter:description" content="2018.10.8  完成流程模板管理页的开发（新增，编辑，预览，删除） 编辑和预览模板的时候 FlowNodeInfo.aspx 页面不显示之前的选择审批人（已解决）  2018.10.9  设计Ecn列表页原型 梳理工作流业务逻辑 测试工作流模板的创建 增加ECN表与工作流实例表的管理 alter table ecn add flowInstanceId 修改工作流发起逻辑，增加与Ecn数据的">
 
 
 
@@ -119,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="https://zettlercn.github.io/">
+  <link rel="canonical" href="https://zettlercn.github.io/2018/11/05/2018-10-work-record/">
 
 
 <script>
     (function(){
-        if(''){
-            if (prompt('请输入密码') !== ''){
+        if('6600849'){
+            if (prompt('请输入密码') !== '6600849'){
                 alert('密码错误');
                 history.back();
             }
@@ -135,7 +136,7 @@
 
 
 
-  <title>ZettlerBlog</title>
+  <title>2018-10 work record | ZettlerBlog</title>
   
 
 
@@ -154,8 +155,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
@@ -258,9 +258,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -290,9 +290,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/11/05/2018-10-work-record/" itemprop="url">2018-10 work record</a></h1>
+          <h1 class="post-title" itemprop="name headline">2018-10 work record</h1>
         
 
         <div class="post-meta">
@@ -364,28 +362,110 @@
       
 
       
-        
-          
-          2018.10.8
+        <p><em>2018.10.8</em></p>
+<ul>
+<li>完成流程模板管理页的开发（新增，编辑，预览，删除）</li>
+<li>编辑和预览模板的时候 FlowNodeInfo.aspx 页面不显示之前的选择审批人（已解决）</li>
+</ul>
+<p><em>2018.10.9</em></p>
+<ul>
+<li>设计Ecn列表页原型</li>
+<li>梳理工作流业务逻辑</li>
+<li>测试工作流模板的创建</li>
+<li>增加ECN表与工作流实例表的管理 alter table ecn add flowInstanceId</li>
+<li>修改工作流发起逻辑，增加与Ecn数据的关联，回写 ecn.flowinstanceid</li>
+<li>优化Ecn列表页面打开链接采用layui打开层的方式</li>
+</ul>
+<p><em>2018.10.10</em></p>
+<ul>
+<li>测试工作流审批逻辑</li>
+<li>Ecn链接工作流处理详情</li>
+<li>完善工作流实例详情页面</li>
+</ul>
+<p><em>2018.10.11</em></p>
+<ul>
+<li>Ecn变更通知单原型页面设计</li>
+</ul>
+<p><em>2018.10.12</em></p>
+<ul>
+<li>Ecn变更通知单原型页面的折叠面板初始化优化</li>
+<li>Ecn变更通知单原型页面充血</li>
+<li>Ecn列表页面流程发起开发</li>
+</ul>
+<p><em>2018.10.15</em></p>
+<ul>
+<li><p>思考各部门审批数据结构设计？</p>
+<blockquote>
+<p>各部门的审批意见，表单数据是否独立表格存储？<br>独立存储数据模块化，前台加载性能较优；<br>单表存储，数据较集中，方便维护；</p>
+</blockquote>
+</li>
+<li><p>参加条码需求讨论会</p>
+</li>
+<li>完善流程的审批功能</li>
+<li>ECN变更通知单详细页接入审核功能；</li>
+</ul>
+<p><em>2018.10.16</em></p>
+<ul>
+<li>WebAPI 框架新增Swagger接口文档的实现</li>
+<li>搭建 Git 源码管理系统</li>
+</ul>
+<p><em>2018.10.17</em></p>
+<ul>
+<li>搭建git源码服务器</li>
+<li>研究分析流程驳回操作<blockquote>
+<p>审批页面初始化时，获取流程的驳回类型，若驳回类型为驳回指定步骤，则动态获取流程节点列表给审批者指定驳回的节点，设置驳回的步骤<br>GET FlowInstance Data API<br>GET Nodes From FlowInstance Data<br>SET node.setInfo.NodeRejectStep</p>
+</blockquote>
+</li>
+</ul>
+<p><em>2018.10.20</em></p>
+<ul>
+<li>测试工作流审批逻辑</li>
+<li>驳回节点选择开发</li>
+</ul>
+<p><em>2018.10.22</em></p>
+<ul>
+<li>新增的审核逻辑再梳理，整理出文档</li>
+<li>增加审核前检查当前用户是否是可执行人(后期修改userid通过header加密传递)</li>
+<li>增加审核前检查当前流程是否已经结束，已经结束则不能再次审批</li>
+</ul>
+<p><em>2018.10.23</em></p>
+<ul>
+<li>增加WebApi 的权限验证，权限验证API测试</li>
+</ul>
+<p><em>2018.10.24</em></p>
+<ul>
+<li>新增权限验证获取tickect接口</li>
+<li>增加WebApi 的权限验证</li>
+<li>修改userid通过header加密传递</li>
+<li>修改Ecn列表页 审批状态显示，增加审批完成成功/失败 的显示</li>
+</ul>
+<p><em>2018.10.25</em></p>
+<ul>
+<li>工作流实例列表获取API修改，增加条件查询</li>
+<li>新增Ecn通知单页面按钮权限控制</li>
+<li>修改生成工作流实例时没有生成flowSchemeId的问题</li>
+<li>检查当前用户是否已经审核过该节点–审批按钮不可用</li>
+</ul>
+<p><em>2018.10.26</em></p>
+<ul>
+<li>Ecn附件上传功能开发</li>
+<li>Ecn附件查看功能开发</li>
+</ul>
+<p><em>2018.10.29</em></p>
+<ul>
+<li>Ecn表单提交附件数据保存开发</li>
+<li>附件删除功能开发</li>
+</ul>
+<p><em>2018.10.30</em></p>
+<ul>
+<li>参加电子和继电器的WMS需求会议，宁波条码公司的MES系统了解</li>
+</ul>
+<p><em>2018.10.31</em></p>
+<ul>
+<li>开发分部层页面（客户选择，品号选择，用户选择）</li>
+<li>修改客户编号表COPMB，增加主键定义</li>
+</ul>
 
-完成流程模板管理页的开发（新增，编辑，预览，删除）
-编辑和预览模板的时候 FlowNodeInfo.aspx 页面不显示之前的选择审批人（已解决）
-
-2018.10.9
-
-设计Ecn列表页原型
-梳理工作流业务逻辑
-测试工作流模板的创建
-增加ECN表与工作流实例表的管理 alte
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/11/05/2018-10-work-record/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
       
     </div>
     
@@ -400,315 +480,36 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://zettlercn.github.io/2018/11/05/Sql-重置自动增长列/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="mark.ouyang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/uploads/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ZettlerBlog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/11/05/Sql-重置自动增长列/" itemprop="url">Sql 重置自动增长列</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-11-05T10:51:43+08:00">
-                2018-11-05
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/tech/" itemprop="url" rel="index">
-                    <span itemprop="name">tech</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
+            <a href="/tags/zettler-work/" rel="tag"># zettler,work</a>
           
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
+      
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
+      
       
       
 
       
-        
-          
-          dbcc checkident(表名, reseed, 0)
-
-          
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/11/05/Sql-重置自动增长列/#more" rel="contents">
-              Read more &raquo;
-            </a>
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/11/05/Sql-重置自动增长列/" rel="next" title="Sql 重置自动增长列">
+                <i class="fa fa-chevron-left"></i> Sql 重置自动增长列
+              </a>
+            
           </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
 
-    
+          <span class="post-nav-divider"></span>
 
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://zettlercn.github.io/2018/11/05/zettlercn-oa-table-record/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="mark.ouyang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/uploads/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ZettlerBlog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/11/05/zettlercn-oa-table-record/" itemprop="url">zettlercn oa table record</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+          <div class="post-nav-prev post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-11-05T10:29:39+08:00">
-                2018-11-05
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/work/" itemprop="url" rel="index">
-                    <span itemprop="name">work</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-          
-客户select  MA001,MA002,MA003,COMPANY,* from COPMA WHERE COMPANY IS NULL
-
-品号()
-select top (10) * from(SELECT  row_number() over(order by MB001) as rown
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/11/05/zettlercn-oa-table-record/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -718,159 +519,11 @@ select top (10) * from(SELECT  row_number() over(order by MB001) as rown
   </article>
 
 
-    
-      
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://zettlercn.github.io/2018/11/02/工作流操作指南/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="mark.ouyang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/uploads/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ZettlerBlog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/11/02/工作流操作指南/" itemprop="url">工作流系统操作指南</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-11-02T09:00:00+08:00">
-                2018-11-02
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/work/" itemprop="url" rel="index">
-                    <span itemprop="name">work</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          一：根据需求新建工作流模板打开模板编辑窗口，输入流程的基本信息，切换到流程设计页。点击选区左侧栏功能按钮于右侧绘图区域绘制流程图。双击节点跳出流程节点设计页，设置流程节点的执行人与节点名称、标识等信息。设置完执行人点击确定，返回流程绘图区域，流程设置完成，点击保存按钮保存，完成工作流模板的设计；
-流
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/11/02/工作流操作指南/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
+    <div class="post-spread">
       
     </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
   </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
 
 
           </div>
@@ -878,6 +531,10 @@ select top (10) * from(SELECT  row_number() over(order by MB001) as rown
 
 
           
+
+  
+
+
 
         </div>
         
@@ -1094,6 +751,10 @@ select top (10) * from(SELECT  row_number() over(order by MB001) as rown
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
