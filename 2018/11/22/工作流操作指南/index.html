@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="work,">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="超级管理员配置部分根据业务需求新建工作流模板  打开模板编辑窗口，输入流程的基本信息，切换到流程设计页。    点击选区左侧栏功能按钮于右侧绘图区域绘制流程图。    双击节点跳出流程节点设计页，设置流程节点的执行人与节点名称、标识等信息。    切换到执行人选项卡，设置流程执行人  设置完执行人点击确定，返回流程绘图区域，流程设置完成，点击保存按钮保存，完成工作流模板的设计； 其他功能：编辑，预">
+<meta name="keywords" content="work">
+<meta property="og:type" content="article">
+<meta property="og:title" content="工作流操作指南">
+<meta property="og:url" content="https://zettlercn.github.io/2018/11/22/工作流操作指南/index.html">
+<meta property="og:site_name" content="ZettlerBlog">
+<meta property="og:description" content="超级管理员配置部分根据业务需求新建工作流模板  打开模板编辑窗口，输入流程的基本信息，切换到流程设计页。    点击选区左侧栏功能按钮于右侧绘图区域绘制流程图。    双击节点跳出流程节点设计页，设置流程节点的执行人与节点名称、标识等信息。    切换到执行人选项卡，设置流程执行人  设置完执行人点击确定，返回流程绘图区域，流程设置完成，点击保存按钮保存，完成工作流模板的设计； 其他功能：编辑，预">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://zettlercn.github.io/uploads/flow1.png">
+<meta property="og:image" content="https://zettlercn.github.io/uploads/flow2.png">
+<meta property="og:image" content="https://zettlercn.github.io/uploads/flow3.png">
+<meta property="og:image" content="https://zettlercn.github.io/uploads/flow4.png">
+<meta property="og:image" content="https://zettlercn.github.io/uploads/flow5.png">
+<meta property="og:image" content="https://zettlercn.github.io/uploads/flow6.png">
+<meta property="og:image" content="https://zettlercn.github.io/uploads/flow7.png">
+<meta property="og:image" content="https://zettlercn.github.io/uploads/flow8.png">
+<meta property="og:image" content="https://zettlercn.github.io/uploads/flow9.png">
+<meta property="og:image" content="https://zettlercn.github.io/uploads/flow10.png">
+<meta property="og:image" content="https://zettlercn.github.io/uploads/flow11.png">
+<meta property="og:image" content="https://zettlercn.github.io/uploads/flow12.png">
+<meta property="og:image" content="https://zettlercn.github.io/uploads/flow13.png">
+<meta property="og:image" content="https://zettlercn.github.io/uploads/flow14.png">
+<meta property="og:image" content="https://zettlercn.github.io/uploads/flow15.png">
+<meta property="og:image" content="https://zettlercn.github.io/uploads/flow16.png">
+<meta property="og:image" content="https://zettlercn.github.io/uploads/flow17.png">
+<meta property="og:image" content="https://zettlercn.github.io/uploads/flow18.png">
+<meta property="og:image" content="https://zettlercn.github.io/uploads/flow19.png">
+<meta property="og:image" content="https://zettlercn.github.io/uploads/flow20.png">
+<meta property="og:image" content="https://zettlercn.github.io/uploads/flow21.png">
+<meta property="og:image" content="https://zettlercn.github.io/uploads/flow22.png">
+<meta property="og:image" content="https://zettlercn.github.io/uploads/flow23.png">
+<meta property="og:image" content="https://zettlercn.github.io/uploads/flow24.png">
+<meta property="og:image" content="https://zettlercn.github.io/uploads/flow25.png">
+<meta property="og:image" content="https://zettlercn.github.io/uploads/flow26.png">
+<meta property="og:updated_time" content="2018-11-22T08:15:22.491Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="工作流操作指南">
+<meta name="twitter:description" content="超级管理员配置部分根据业务需求新建工作流模板  打开模板编辑窗口，输入流程的基本信息，切换到流程设计页。    点击选区左侧栏功能按钮于右侧绘图区域绘制流程图。    双击节点跳出流程节点设计页，设置流程节点的执行人与节点名称、标识等信息。    切换到执行人选项卡，设置流程执行人  设置完执行人点击确定，返回流程绘图区域，流程设置完成，点击保存按钮保存，完成工作流模板的设计； 其他功能：编辑，预">
+<meta name="twitter:image" content="https://zettlercn.github.io/uploads/flow1.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://zettlercn.github.io/2018/11/22/工作流操作指南/">
+
+
+<script>
+    (function(){
+        if('it4'){
+            if (prompt('请输入密码') !== 'it4'){
+                alert('密码错误');
+                history.back();
+            }
+        }
+    })();
+</script>
+
+
+
+  <title>工作流操作指南 | ZettlerBlog</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">ZettlerBlog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">相信未来</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br>
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://zettlercn.github.io/2018/11/22/工作流操作指南/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="mark.ouyang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ZettlerBlog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">工作流操作指南</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-11-22T15:00:23+08:00">
+                2018-11-22
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/work/" itemprop="url" rel="index">
+                    <span itemprop="name">work</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="超级管理员配置部分"><a href="#超级管理员配置部分" class="headerlink" title="超级管理员配置部分"></a>超级管理员配置部分</h2><p>根据业务需求新建工作流模板</p>
+<ul>
+<li>打开模板编辑窗口，输入流程的基本信息，切换到流程设计页。</li>
+</ul>
+<p><img src="/uploads/flow1.png" alt="图片"></p>
+<ul>
+<li>点击选区左侧栏功能按钮于右侧绘图区域绘制流程图。</li>
+</ul>
+<p><img src="/uploads/flow2.png" alt="图片"></p>
+<ul>
+<li>双击节点跳出流程节点设计页，设置流程节点的执行人与节点名称、标识等信息。</li>
+</ul>
+<p><img src="/uploads/flow3.png" alt="图片"></p>
+<ul>
+<li>切换到执行人选项卡，设置流程执行人</li>
+</ul>
+<p><img src="/uploads/flow4.png" alt="图片"><br>设置完执行人点击确定，返回流程绘图区域，流程设置完成，点击保存按钮保存，完成工作流模板的设计；</p>
+<p>其他功能：编辑，预览，删除 模板<br><img src="/uploads/flow5.png" alt="图片"></p>
+<p>## </p>
+<h2 id="流程发起者与审核者"><a href="#流程发起者与审核者" class="headerlink" title="流程发起者与审核者"></a>流程发起者与审核者</h2><h3 id="ECN变更通知单创建"><a href="#ECN变更通知单创建" class="headerlink" title="ECN变更通知单创建"></a>ECN变更通知单创建</h3><p>选择系统菜单：工程变更通知单=》工程变更通知单-ZE=》录入工程变更通知单-ze-new<br>填写完表单之后，先保存，再发起；</p>
+<p>流程发起之后，会向下一级审批者发送一封邮件提醒（每审批一次流程都会向下一级审批者发送邮件提醒）；</p>
+<p>流程发起之后可以在页面顶部的进度按钮查看当前审批进度；</p>
+<p><img src="/uploads/flow6.png" alt="图片"></p>
+<p><img src="/uploads/flow7.png" alt="图片"><br><img src="/uploads/flow8.png" alt="图片"></p>
+<h3 id="工作流实例发起"><a href="#工作流实例发起" class="headerlink" title="工作流实例发起"></a>工作流实例发起</h3><p>方式一：ECN变更通知单页面保存完表单信息之后，点击保存按钮右边的发起按钮可发起工作流审批；<br><img src="/uploads/flow9.png" alt="图片"><br>方式二：进入工程变更通知单列表页面选择要发起的通知单操作<br><img src="/uploads/flow10.png" alt="图片"></p>
+<p>列表页面显示了流程的运行状态，未发起的通知单，可点击发起流程，点击操作进入通知单详情页；<br>点击流程的状态（除发起流程）可查看当前流程的运行进度；<br>点击流程节点可查看审批意见；</p>
+<p><img src="/uploads/flow11.png" alt="图片"><br><img src="/uploads/flow12.png" alt="图片"><br>不同的处理状态有不同的颜色区分<br><img src="/uploads/flow13.png" alt="图片"></p>
+<p>进入ECN流程的详细页面，已发起的流程有进度条显示审批进度；<br><img src="/uploads/flow14.png" alt="图片"><br><img src="/uploads/flow15.png" alt="图片"><br>展开相应的折叠面板可查看各节点的处理详情<br><img src="/uploads/flow16.png" alt="图片"></p>
+<h3 id="开发部审核"><a href="#开发部审核" class="headerlink" title="开发部审核"></a>开发部审核</h3><p><img src="/uploads/flow17.png" alt="图片"></p>
+<p><img src="/uploads/flow18.png" alt="图片"></p>
+<h3 id="物控部审核"><a href="#物控部审核" class="headerlink" title="物控部审核"></a>物控部审核</h3><p><img src="/uploads/flow19.png" alt="图片"></p>
+<h3 id="工程部审核"><a href="#工程部审核" class="headerlink" title="工程部审核"></a>工程部审核</h3><p><img src="/uploads/flow20.png" alt="图片"></p>
+<h3 id="销售部审核"><a href="#销售部审核" class="headerlink" title="销售部审核"></a>销售部审核</h3><p><img src="/uploads/flow21.png" alt="图片"></p>
+<h3 id="质量部审核"><a href="#质量部审核" class="headerlink" title="质量部审核"></a>质量部审核</h3><p><img src="/uploads/flow22.png" alt="图片"><br><img src="/uploads/flow23.png" alt="图片"></p>
+<h3 id="生产部审核"><a href="#生产部审核" class="headerlink" title="生产部审核"></a>生产部审核</h3><p><img src="/uploads/flow24.png" alt="图片"></p>
+<h3 id="采购部审核"><a href="#采购部审核" class="headerlink" title="采购部审核"></a>采购部审核</h3><p><img src="/uploads/flow25.png" alt="图片"></p>
+<h3 id="财务部审核"><a href="#财务部审核" class="headerlink" title="财务部审核"></a>财务部审核</h3><p><img src="/uploads/flow26.png" alt="图片"></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/work/" rel="tag"># work</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/11/05/zettlercn-oa-table-record/" rel="next" title="zettlercn oa table record">
+                <i class="fa fa-chevron-left"></i> zettlercn oa table record
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/uploads/avatar.jpg" alt="mark.ouyang">
+            
+              <p class="site-author-name" itemprop="name">mark.ouyang</p>
+              <p class="site-description motion-element" itemprop="description">高楼像山坡，我像只麻雀，谁说生活一定要这样沉默，我要大声的和着，虽然我是只麻雀.</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives">
+              
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">categories</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#超级管理员配置部分"><span class="nav-number">1.</span> <span class="nav-text">超级管理员配置部分</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#流程发起者与审核者"><span class="nav-number">2.</span> <span class="nav-text">流程发起者与审核者</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#ECN变更通知单创建"><span class="nav-number">2.1.</span> <span class="nav-text">ECN变更通知单创建</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#工作流实例发起"><span class="nav-number">2.2.</span> <span class="nav-text">工作流实例发起</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#开发部审核"><span class="nav-number">2.3.</span> <span class="nav-text">开发部审核</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#物控部审核"><span class="nav-number">2.4.</span> <span class="nav-text">物控部审核</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#工程部审核"><span class="nav-number">2.5.</span> <span class="nav-text">工程部审核</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#销售部审核"><span class="nav-number">2.6.</span> <span class="nav-text">销售部审核</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#质量部审核"><span class="nav-number">2.7.</span> <span class="nav-text">质量部审核</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#生产部审核"><span class="nav-number">2.8.</span> <span class="nav-text">生产部审核</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#采购部审核"><span class="nav-number">2.9.</span> <span class="nav-text">采购部审核</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#财务部审核"><span class="nav-number">2.10.</span> <span class="nav-text">财务部审核</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">mark.ouyang</span>
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
