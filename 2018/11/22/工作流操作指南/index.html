@@ -103,6 +103,8 @@
 <meta property="og:image" content="https://zettlercn.github.io/uploads/flow14.png">
 <meta property="og:image" content="https://zettlercn.github.io/uploads/flow15.png">
 <meta property="og:image" content="https://zettlercn.github.io/uploads/flow16.png">
+<meta property="og:image" content="https://zettlercn.github.io/uploads/flow27.png">
+<meta property="og:image" content="https://zettlercn.github.io/uploads/flow28.png">
 <meta property="og:image" content="https://zettlercn.github.io/uploads/flow17.png">
 <meta property="og:image" content="https://zettlercn.github.io/uploads/flow18.png">
 <meta property="og:image" content="https://zettlercn.github.io/uploads/flow19.png">
@@ -113,7 +115,7 @@
 <meta property="og:image" content="https://zettlercn.github.io/uploads/flow24.png">
 <meta property="og:image" content="https://zettlercn.github.io/uploads/flow25.png">
 <meta property="og:image" content="https://zettlercn.github.io/uploads/flow26.png">
-<meta property="og:updated_time" content="2018-11-22T08:15:22.491Z">
+<meta property="og:updated_time" content="2018-11-26T05:51:49.577Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="工作流操作指南">
 <meta name="twitter:description" content="超级管理员配置部分根据业务需求新建工作流模板  打开模板编辑窗口，输入流程的基本信息，切换到流程设计页。    点击选区左侧栏功能按钮于右侧绘图区域绘制流程图。    双击节点跳出流程节点设计页，设置流程节点的执行人与节点名称、标识等信息。    切换到执行人选项卡，设置流程执行人  设置完执行人点击确定，返回流程绘图区域，流程设置完成，点击保存按钮保存，完成工作流模板的设计； 其他功能：编辑，预">
@@ -152,8 +154,8 @@
 
 <script>
     (function(){
-        if('it4'){
-            if (prompt('请输入密码') !== 'it4'){
+        if('zit'){
+            if (prompt('请输入密码') !== 'zit'){
                 alert('密码错误');
                 history.back();
             }
@@ -417,6 +419,10 @@
 <p>列表页面显示了流程的运行状态，未发起的通知单，可点击发起流程，点击操作进入通知单详情页；<br>点击流程的状态（除发起流程）可查看当前流程的运行进度；<br>点击流程节点可查看审批意见；</p>
 <p><img src="/uploads/flow11.png" alt="图片"><br><img src="/uploads/flow12.png" alt="图片"><br>不同的处理状态有不同的颜色区分<br><img src="/uploads/flow13.png" alt="图片"></p>
 <p>进入ECN流程的详细页面，已发起的流程有进度条显示审批进度；<br><img src="/uploads/flow14.png" alt="图片"><br><img src="/uploads/flow15.png" alt="图片"><br>展开相应的折叠面板可查看各节点的处理详情<br><img src="/uploads/flow16.png" alt="图片"></p>
+<h3 id="待审批提示"><a href="#待审批提示" class="headerlink" title="待审批提示"></a>待审批提示</h3><ul>
+<li>方式一：邮件提示</li>
+<li>方式二：工具栏提示链接，如下图<br><img src="/uploads/flow27.png" alt="图片"><br><img src="/uploads/flow28.png" alt="图片"></li>
+</ul>
 <h3 id="开发部审核"><a href="#开发部审核" class="headerlink" title="开发部审核"></a>开发部审核</h3><p><img src="/uploads/flow17.png" alt="图片"></p>
 <p><img src="/uploads/flow18.png" alt="图片"></p>
 <h3 id="物控部审核"><a href="#物控部审核" class="headerlink" title="物控部审核"></a>物控部审核</h3><p><img src="/uploads/flow19.png" alt="图片"></p>
@@ -598,7 +604,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#超级管理员配置部分"><span class="nav-number">1.</span> <span class="nav-text">超级管理员配置部分</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#流程发起者与审核者"><span class="nav-number">2.</span> <span class="nav-text">流程发起者与审核者</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#ECN变更通知单创建"><span class="nav-number">2.1.</span> <span class="nav-text">ECN变更通知单创建</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#工作流实例发起"><span class="nav-number">2.2.</span> <span class="nav-text">工作流实例发起</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#开发部审核"><span class="nav-number">2.3.</span> <span class="nav-text">开发部审核</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#物控部审核"><span class="nav-number">2.4.</span> <span class="nav-text">物控部审核</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#工程部审核"><span class="nav-number">2.5.</span> <span class="nav-text">工程部审核</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#销售部审核"><span class="nav-number">2.6.</span> <span class="nav-text">销售部审核</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#质量部审核"><span class="nav-number">2.7.</span> <span class="nav-text">质量部审核</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#生产部审核"><span class="nav-number">2.8.</span> <span class="nav-text">生产部审核</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#采购部审核"><span class="nav-number">2.9.</span> <span class="nav-text">采购部审核</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#财务部审核"><span class="nav-number">2.10.</span> <span class="nav-text">财务部审核</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#超级管理员配置部分"><span class="nav-number">1.</span> <span class="nav-text">超级管理员配置部分</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#流程发起者与审核者"><span class="nav-number">2.</span> <span class="nav-text">流程发起者与审核者</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#ECN变更通知单创建"><span class="nav-number">2.1.</span> <span class="nav-text">ECN变更通知单创建</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#工作流实例发起"><span class="nav-number">2.2.</span> <span class="nav-text">工作流实例发起</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#待审批提示"><span class="nav-number">2.3.</span> <span class="nav-text">待审批提示</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#开发部审核"><span class="nav-number">2.4.</span> <span class="nav-text">开发部审核</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#物控部审核"><span class="nav-number">2.5.</span> <span class="nav-text">物控部审核</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#工程部审核"><span class="nav-number">2.6.</span> <span class="nav-text">工程部审核</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#销售部审核"><span class="nav-number">2.7.</span> <span class="nav-text">销售部审核</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#质量部审核"><span class="nav-number">2.8.</span> <span class="nav-text">质量部审核</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#生产部审核"><span class="nav-number">2.9.</span> <span class="nav-text">生产部审核</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#采购部审核"><span class="nav-number">2.10.</span> <span class="nav-text">采购部审核</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#财务部审核"><span class="nav-number">2.11.</span> <span class="nav-text">财务部审核</span></a></li></ol></li></ol></div>
             
 
           </div>
