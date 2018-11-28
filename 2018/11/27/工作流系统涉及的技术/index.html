@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="单点登陆实现 webApi 跨域实现 webApi 请求头安全处理，身份验证实现 swagger API 文档生成 Gflow 工作流插件的使用 vue 前端框架 layui 前端框架 jqgrid 的使用 在webform里面使用 tmpl codesmith 代码生成器的使用 ef 的使用 领域驱动的设计思想 使用GitBlit搭建Git源码服务器 bootstrap Admin LTE 后">
+<meta name="description" content="Welcome to my blog, enter password to read.">
 <meta name="keywords" content="work">
 <meta property="og:type" content="article">
 <meta property="og:title" content="工作流系统的几个技术点">
 <meta property="og:url" content="https://zettlercn.github.io/2018/11/27/工作流系统涉及的技术/index.html">
 <meta property="og:site_name" content="ZettlerBlog">
-<meta property="og:description" content="单点登陆实现 webApi 跨域实现 webApi 请求头安全处理，身份验证实现 swagger API 文档生成 Gflow 工作流插件的使用 vue 前端框架 layui 前端框架 jqgrid 的使用 在webform里面使用 tmpl codesmith 代码生成器的使用 ef 的使用 领域驱动的设计思想 使用GitBlit搭建Git源码服务器 bootstrap Admin LTE 后">
+<meta property="og:description" content="Welcome to my blog, enter password to read.">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-11-28T05:44:39.405Z">
+<meta property="og:updated_time" content="2018-11-28T07:25:14.614Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="工作流系统的几个技术点">
-<meta name="twitter:description" content="单点登陆实现 webApi 跨域实现 webApi 请求头安全处理，身份验证实现 swagger API 文档生成 Gflow 工作流插件的使用 vue 前端框架 layui 前端框架 jqgrid 的使用 在webform里面使用 tmpl codesmith 代码生成器的使用 ef 的使用 领域驱动的设计思想 使用GitBlit搭建Git源码服务器 bootstrap Admin LTE 后">
+<meta name="twitter:description" content="Welcome to my blog, enter password to read.">
 
 
 
@@ -124,14 +124,16 @@
 
 
 <script>
+/*
     (function(){
-        if('zit'){
-            if (prompt('请输入密码') !== 'zit'){
+        if('it4'){
+            if (prompt('请输入密码') !== 'it4'){
                 alert('密码错误');
                 history.back();
             }
         }
     })();
+*/
 </script>
 
 
@@ -352,28 +354,20 @@
       
 
       
-        <ul>
-<li>单点登陆实现</li>
-<li>webApi 跨域实现</li>
-<li>webApi 请求头安全处理，身份验证实现</li>
-<li>swagger API 文档生成</li>
-<li>Gflow 工作流插件的使用</li>
-<li>vue 前端框架</li>
-<li>layui 前端框架</li>
-<li>jqgrid 的使用</li>
-<li>在webform里面使用 tmpl</li>
-<li>codesmith 代码生成器的使用</li>
-<li>ef 的使用</li>
-<li>领域驱动的设计思想</li>
-<li>使用GitBlit搭建Git源码服务器</li>
-<li>bootstrap Admin LTE 后台模板的使用</li>
-<li>NLog 开源日志组件</li>
-<li>ztree JS 树形结构开源插件，灵活方便展示组织结构</li>
-<li>jquery UI 进度条的使用，用于动态显示处理进度</li>
-<li>html5 自适应网页技术</li>
-<li>单元测试</li>
-</ul>
-
+        <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<div id="hbe-security">
+  <div class="hbe-input-container">
+  <input type="password" class="hbe-form-control" id="pass" placeholder="Welcome to my blog, enter password to read.">
+    <label for="pass">Welcome to my blog, enter password to read.</label>
+    <div class="bottom-line"></div>
+  </div>
+</div>
+<div id="decryptionError" style="display: none;">Incorrect Password!</div>
+<div id="noContentError" style="display: none;">No content to display!</div>
+<div id="encrypt-blog" style="display:none">
+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
+</div>
+<script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">
       
     </div>
     
@@ -403,8 +397,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/11/22/工作流操作指南/" rel="next" title="工作流操作指南">
-                <i class="fa fa-chevron-left"></i> 工作流操作指南
+              <a href="/2018/11/27/工作流需求变动v1/" rel="next" title="工作流需求变动 v1">
+                <i class="fa fa-chevron-left"></i> 工作流需求变动 v1
               </a>
             
           </div>
@@ -412,10 +406,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/11/27/工作流需求变动v1/" rel="prev" title="工作流需求变动 v1">
-                工作流需求变动 v1 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -496,7 +486,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">1</span>
                   <span class="site-state-item-name">categories</span>
                 </a>
               </div>
@@ -507,7 +497,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>

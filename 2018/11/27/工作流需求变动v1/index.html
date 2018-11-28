@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="流程修改：1.开发部，工程部发起流程，2.物控部3.质量部 –处置报告单4.销售部5.生产部/采购部/财务部6.增加开发部经理(终审)  备注：部门内部确认：工程师，经理审核。其他节点只允许通过与驳回最后一个节点允许不通过(研发部经理)驳回时：发邮件通知驳回节点前人邮件处理意见。  功能修改： ECN单据-改成单据编号，保留ECN编码可修改状态 变更名称采用子表问题：增加库存，在途，在线物料等（P">
+<meta name="description" content="The article has been encrypted, please enter your password to view.">
 <meta name="keywords" content="work">
 <meta property="og:type" content="article">
 <meta property="og:title" content="工作流需求变动 v1">
 <meta property="og:url" content="https://zettlercn.github.io/2018/11/27/工作流需求变动v1/index.html">
 <meta property="og:site_name" content="ZettlerBlog">
-<meta property="og:description" content="流程修改：1.开发部，工程部发起流程，2.物控部3.质量部 –处置报告单4.销售部5.生产部/采购部/财务部6.增加开发部经理(终审)  备注：部门内部确认：工程师，经理审核。其他节点只允许通过与驳回最后一个节点允许不通过(研发部经理)驳回时：发邮件通知驳回节点前人邮件处理意见。  功能修改： ECN单据-改成单据编号，保留ECN编码可修改状态 变更名称采用子表问题：增加库存，在途，在线物料等（P">
+<meta property="og:description" content="The article has been encrypted, please enter your password to view.">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:updated_time" content="2018-11-28T05:24:54.849Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="工作流需求变动 v1">
-<meta name="twitter:description" content="流程修改：1.开发部，工程部发起流程，2.物控部3.质量部 –处置报告单4.销售部5.生产部/采购部/财务部6.增加开发部经理(终审)  备注：部门内部确认：工程师，经理审核。其他节点只允许通过与驳回最后一个节点允许不通过(研发部经理)驳回时：发邮件通知驳回节点前人邮件处理意见。  功能修改： ECN单据-改成单据编号，保留ECN编码可修改状态 变更名称采用子表问题：增加库存，在途，在线物料等（P">
+<meta name="twitter:description" content="The article has been encrypted, please enter your password to view.">
 
 
 
@@ -124,6 +124,7 @@
 
 
 <script>
+/*
     (function(){
         if('zit'){
             if (prompt('请输入密码') !== 'zit'){
@@ -132,6 +133,7 @@
             }
         }
     })();
+*/
 </script>
 
 
@@ -352,22 +354,20 @@
       
 
       
-        <h3 id="流程修改："><a href="#流程修改：" class="headerlink" title="流程修改："></a>流程修改：</h3><p>1.开发部，工程部发起流程，<br>2.物控部<br>3.质量部 –处置报告单<br>4.销售部<br>5.生产部/采购部/财务部<br>6.增加开发部经理(终审)</p>
-<blockquote>
-<p>备注：<br>部门内部确认：工程师，经理审核。<br>其他节点只允许通过与驳回<br>最后一个节点允许不通过(研发部经理)<br>驳回时：发邮件通知驳回节点前人邮件处理意见。</p>
-</blockquote>
-<h3 id="功能修改："><a href="#功能修改：" class="headerlink" title="功能修改："></a>功能修改：</h3><ol>
-<li>ECN单据-改成单据编号，保留ECN编码可修改状态</li>
-<li>变更名称采用子表问题：增加库存，在途，在线物料等（PMC部门相关资料）</li>
-<li>增加：变更执行成效及注意事项，解决方案-与现有模板保持一致</li>
-<li>变更设计物料处理：</li>
-<li>物控部审核–库存，在途，在线物料自动取值(后续改善阶段)</li>
-<li>确认者与审核者不允许修改</li>
-<li>会签部门-需要两人签字</li>
-<li>销售部门：确认者允许为空。</li>
-<li>预览生成一个PDF档案-A4纸张大小一次性预览。</li>
-</ol>
-
+        <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<div id="hbe-security">
+  <div class="hbe-input-container">
+  <input type="password" class="hbe-form-control" id="pass" placeholder="Please enter the password to read the blog.">
+    <label for="pass">Please enter the password to read the blog.</label>
+    <div class="bottom-line"></div>
+  </div>
+</div>
+<div id="decryptionError" style="display: none;">Incorrect Password!</div>
+<div id="noContentError" style="display: none;">No content to display!</div>
+<div id="encrypt-blog" style="display:none">
+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
+</div>
+<script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">
       
     </div>
     
@@ -397,8 +397,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/11/27/工作流系统涉及的技术/" rel="next" title="工作流系统的几个技术点">
-                <i class="fa fa-chevron-left"></i> 工作流系统的几个技术点
+              <a href="/2018/11/22/工作流操作指南/" rel="next" title="工作流操作指南">
+                <i class="fa fa-chevron-left"></i> 工作流操作指南
               </a>
             
           </div>
@@ -406,6 +406,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/11/27/工作流系统涉及的技术/" rel="prev" title="工作流系统的几个技术点">
+                工作流系统的几个技术点 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -457,17 +461,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -495,7 +490,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">1</span>
                   <span class="site-state-item-name">categories</span>
                 </a>
               </div>
@@ -506,7 +501,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
@@ -529,22 +524,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#流程修改："><span class="nav-number">1.</span> <span class="nav-text">流程修改：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#功能修改："><span class="nav-number">2.</span> <span class="nav-text">功能修改：</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
